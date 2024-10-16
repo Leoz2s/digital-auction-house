@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Container } from './styles';
 
+import { Header } from '../../components/Header';
+
 export function Home() {
   type Auction = {
     id: number;
@@ -16,9 +18,9 @@ export function Home() {
   
   return(
     <Container>
+      <Header />
       
       <h2>Digital Auction House</h2>
-
       {auctions[0] && auctions[0].name}
     </Container>
   );
