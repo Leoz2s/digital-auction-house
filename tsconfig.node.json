@@ -6,7 +6,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node", // Como o TypeScript resolve as importações de módulos.
     "allowImportingTsExtensions": false, // true
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -19,7 +19,6 @@
     "noFallthroughCasesInSwitch": true,
 
     "composite": true, // Composto por várias partes interdependentes.
-    "moduleResolution": "Node", // Como o TypeScript resolve as importações de módulos.
     "allowSyntheticDefaultImports": true // Pode importar módulos que não exportam um valor padrão 
   },
   "include": ["vite.config.ts"] // Especifica quais arquivos devem ser incluídos no processo de compilação. 
