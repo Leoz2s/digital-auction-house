@@ -2,21 +2,29 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2023"],
-    "module": "ESNext",
+    "module": "ESNext", // Gerar o código Javascript com o formato compatível com o ECMAScript mais recente.
     "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false, // true
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false, // true
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "composite": true, // Composto por várias partes interdependentes.
+    "moduleResolution": "Node", // Como o TypeScript resolve as importações de módulos.
+    "allowSyntheticDefaultImports": true // Pode importar módulos que não exportam um valor padrão 
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"] // Especifica quais arquivos devem ser incluídos no processo de compilação. 
 }
+
+
+
+
